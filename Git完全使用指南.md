@@ -1,3 +1,8 @@
+---
+layout: default
+title: Git 完全使用指南
+---
+
 # Git 完全使用指南
 
 > 从零开始，彻底掌握 Git 版本控制

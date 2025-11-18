@@ -1,3 +1,8 @@
+---
+layout: default
+title: Mermaid 图表配置说明
+---
+
 # Mermaid 图表配置说明
 
 > 如何让 GitHub Pages 正确显示 Mermaid 流程图
