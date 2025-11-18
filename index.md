@@ -16,6 +16,7 @@ This repository contains various development guides and tutorials.
 
 ### 部署与运维 / Deployment & DevOps
 - [GitHub仓库到自定义域名完整流程](GitHub仓库到自定义域名完整流程.md) - GitHub Pages + 自定义域名完整部署指南
+- [Mermaid图表配置说明](Mermaid图表配置说明.md) - 在 GitHub Pages 上启用 Mermaid 流程图渲染
 
 ## 🎯 目标 / Purpose
 
