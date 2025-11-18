@@ -6,7 +6,11 @@ This repository contains various development guides and tutorials.
 
 ## 📚 指南列表 / Guides
 
+### 版本控制 / Version Control
 - [Git完全使用指南](Git完全使用指南.md) - 从基础到高级的Git完整教程
+
+### 部署与运维 / Deployment & DevOps
+- [GitHub仓库到自定义域名完整流程](GitHub仓库到自定义域名完整流程.md) - GitHub Pages + 自定义域名完整部署指南
 
 ## 🎯 目标 / Purpose
 
