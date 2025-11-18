@@ -1,0 +1,72 @@
+# GitHub Pages 配置文件
+
+# 站点信息
+title: 开发指南集合
+description: Development Guides Collection - 从基础到高级的开发工具指南
+lang: zh-CN
+
+# GitHub 仓库信息（自动填充）
+# repository: chituhouse/dev-guides
+
+# Markdown 处理器配置
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# 插件
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-github-metadata
+
+# 相对链接配置
+relative_links:
+  enabled: true
+  collections: false
+
+# 从标题生成页面标题
+titles_from_headings:
+  enabled: true
+  strip_title: true
+  collections: false
+
+# 可选的前置内容
+optional_front_matter:
+  remove_originals: false
+
+# 主题（使用默认主题，我们会自定义布局）
+# theme: jekyll-theme-minimal
+
+# 排除文件
+exclude:
+  - .claude/
+  - .git/
+  - .gitignore
+  - README.md.bak
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .DS_Store
+  - "*.tmp"
+  - "*.temp"
+
+# 包含文件
+include:
+  - _layouts
+  - _includes
+  - .nojekyll
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

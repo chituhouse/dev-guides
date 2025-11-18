@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+
+    <!-- GitHub Pages 默认样式 -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <!-- Mermaid.js CDN -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Mermaid 图表容器样式 */
+        .mermaid {
+            text-align: center;
+            margin: 20px 0;
+            background: #f6f8fa;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        /* 代码块样式 */
+        pre {
+            background: #f6f8fa;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        code {
+            background: #f6f8fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 85%;
+        }
+
+        /* 表格样式 */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #d0d7de;
+            padding: 8px 13px;
+            text-align: left;
+        }
+
+        table th {
+            background: #f6f8fa;
+            font-weight: 600;
+        }
+
+        table tr:nth-child(even) {
+            background: #f6f8fa;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 标题样式 */
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 2em;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 0.3em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 0.3em;
+        }
+
+        /* 引用块样式 */
+        blockquote {
+            padding: 0 1em;
+            color: #57606a;
+            border-left: 0.25em solid #d0d7de;
+            margin: 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .mermaid {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {{ content }}
+    </div>
+
+    <!-- 返回首页链接 -->
+    {% if page.url != "/" and page.url != "/index.html" %}
+    <hr style="margin-top: 40px;">
+    <p style="text-align: center;">
+        <a href="/">← 返回首页</a>
+    </p>
+    {% endif %}
+
+    <!-- GitHub 角标（可选） -->
+    {% if site.github.repository_url %}
+    <a href="{{ site.github.repository_url }}" style="position: fixed; top: 0; right: 0; border: 0;">
+        <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" alt="Fork me on GitHub">
+    </a>
+    {% endif %}
+</body>
+</html>
