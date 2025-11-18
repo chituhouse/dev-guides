@@ -12,11 +12,11 @@ This repository contains various development guides and tutorials.
 ## 📚 指南列表 / Guides
 
 ### 版本控制 / Version Control
-- [Git完全使用指南](Git完全使用指南.md) - 从基础到高级的Git完整教程
+- [Git 版本控制完全指南](Git版本控制完全指南.md) - 从基础到高级的 Git 完整教程
 
 ### 部署与运维 / Deployment & DevOps
-- [GitHub仓库到自定义域名完整流程](GitHub仓库到自定义域名完整流程.md) - GitHub Pages + 自定义域名完整部署指南
-- [Mermaid图表配置说明](Mermaid图表配置说明.md) - 在 GitHub Pages 上启用 Mermaid 流程图渲染
+- [GitHub Pages 部署指南](GitHub-Pages部署指南-从仓库到自定义域名.md) - 从仓库创建到自定义域名的完整部署流程
+- [GitHub Pages Mermaid 图表渲染配置](GitHub-Pages-Mermaid图表渲染配置.md) - 启用 Mermaid 流程图自动渲染
 
 ## 🎯 目标 / Purpose
 

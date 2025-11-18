@@ -9,6 +9,58 @@ title: Mermaid 图表配置说明
 
 ---
 
+## ⚠️ 常见问题和踩坑记录
+
+### 坑 1：缺少 Front Matter 导致布局不生效
+
+**症状**：Mermaid 代码块显示为纯文本，不是图表
+
+**原因**：Markdown 文件没有 YAML Front Matter，Jekyll 不会应用自定义布局
+
+```markdown
+# ❌ 错误：没有 Front Matter
+# 文档标题
+内容...
+
+# ✅ 正确：有 Front Matter
+---
+layout: default
+title: 文档标题
+---
+# 文档标题
+内容...
+```
+
+**解决方法**：在每个 Markdown 文件开头添加：
+```yaml
+---
+layout: default
+title: 你的标题
+---
+```
+
+---
+
+### 坑 2：kramdown 渲染格式不匹配
+
+**症状**：添加了 Mermaid.js 但图表仍不显示
+
+**原因**：kramdown 将 Mermaid 代码块渲染为 `<code class="language-mermaid">`，而 Mermaid.js 默认查找 `<div class="mermaid">`
+
+**解决方法**：使用 JavaScript 手动转换格式（已在 `_layouts/default.html` 中实现）
+
+---
+
+### 坑 3：ES Module 兼容性问题
+
+**症状**：控制台报错 "import not supported"
+
+**原因**：部分浏览器或 Jekyll 环境不支持 ES Module
+
+**解决方法**：使用传统 script 标签而不是 ES Module
+
+---
+
 ## 🤔 问题原因
 
 ### 为什么 Mermaid 图表不显示？
