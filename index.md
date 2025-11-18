@@ -18,6 +18,9 @@ This repository contains various development guides and tutorials.
 - [GitHub Pages 部署指南](GitHub-Pages部署指南-从仓库到自定义域名.md) - 从仓库创建到自定义域名的完整部署流程
 - [GitHub Pages Mermaid 图表渲染配置](GitHub-Pages-Mermaid图表渲染配置.md) - 启用 Mermaid 流程图自动渲染
 
+### 工作流程与协作 / Workflow & Collaboration
+- [Claude Code 工作模式与团队协作规范](Claude-Code工作模式与团队协作规范.md) - 管理者模式下的 AI 协作工作流程
+
 ## 🎯 目标 / Purpose
 
 帮助开发者系统学习和掌握各种开发工具和最佳实践。
